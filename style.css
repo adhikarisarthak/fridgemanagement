@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+input, button {
+  margin-top: 10px;
+}
+
+#search-results {
+  list-style-type: none;
+}
+
+#quantity-list li.low {
+  color: red;
+}
+
+#quantity-list li {
+  margin-bottom: 10px;
+}
