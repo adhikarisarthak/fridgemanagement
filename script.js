@@ -41,3 +41,5 @@ function updateInventoryList() {
 }
 
 // Function to search for
+
+// MAJORICA WAS HERE
