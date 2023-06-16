@@ -1,28 +1,59 @@
+/* Add your CSS styling here */
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-  text-align: center;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-h2 {
-  margin-top: 20px;
+h1, h2 {
+    margin: 0;
 }
 
-input, button {
-  margin-top: 10px;
+main {
+    padding: 20px;
 }
 
-#search-results {
-  list-style-type: none;
+section {
+    margin-bottom: 40px;
 }
 
-#quantity-list li.low {
-  color: red;
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-#quantity-list li {
-  margin-bottom: 10px;
+input[type="text"],
+input[type="date"],
+input[type="number"],
+button {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
 }
