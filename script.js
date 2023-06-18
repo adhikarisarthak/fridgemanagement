@@ -134,6 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // need work
+
   generateListBtn.addEventListener('click', function () {
     shoppingList.innerHTML = '';
 
