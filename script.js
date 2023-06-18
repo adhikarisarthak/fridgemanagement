@@ -146,3 +146,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+// USER CLASS AND FUNCTIONS
+class User {
+
+  constructor(userId, userName, userEmail, userPassword) {
+    this.userId = userId;
+    this.userName = userName;
+    this.userEmail = userEmail;
+    this.userPassword = userPassword;
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
