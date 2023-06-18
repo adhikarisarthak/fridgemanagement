@@ -7,8 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const expiredList = document.getElementById('expired-list');
   const generateListBtn = document.getElementById('generate-list-btn');
   const shoppingList = document.getElementById('shopping-list');
-  let fridgeItems = [];
+  let fridgeItems = []; // Temp Database as local array
 
+
+  //Adding Item Field through button
   addItemForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -22,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       quantity: quantity
     };
 
+
+    //Adding Item to Array
     fridgeItems.push(item);
 
     renderItemList();
@@ -30,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     clearAddItemForm();
   });
 
+
+
+  // Function to display item on the list || Need to rewrite
   function renderItemList() {
     itemList.innerHTML = '';
 
@@ -48,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+  // Function to remove item from list || Need to rewrite
   function removeItem(index) {
     fridgeItems.splice(index, 1);
     renderItemList();
@@ -55,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
     renderExpiredList();
   }
 
+
+  // Function to see quantities of items
   function renderQuantityList() {
     quantityList.innerHTML = '';
 
@@ -78,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+
+  // Function to see expired items
   function renderExpiredList() {
     expiredList.innerHTML = '';
 
@@ -94,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+  // Function to clear form after its submited
   function clearAddItemForm() {
     document.getElementById('item-name').value = '';
     document.getElementById('expiration-date').value = '';
@@ -151,7 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // USER CLASS AND FUNCTIONS
 class User {
-
   constructor(userId, userName, userEmail, userPassword) {
     this.userId = userId;
     this.userName = userName;
@@ -159,11 +173,29 @@ class User {
     this.userPassword = userPassword;
   }
 
-
-
-
-
+  DisplayUser() {
+    console.log(this.userID);
+    console.log(this.userName);
+  }
 }
+
+class UserManager {
+  constructor() {
+    this.UserManager = [];
+  }
+
+  registerUser(userId, userName, userEmail, userPassword) {
+    let u = new User(userId, userName, userEmail, userPassword);
+    this.UserManager.push(u);
+  }
+}
+
+let Users = new UserManager();
+Users.registerUser(888, "John", "John@gmail.com", "sanctimonious");
+Users.registerUser(889, "Mack", "Mack@gmail.com", "delicious");
+
+Users[0].DisplayUser;
+Users[1].DisplayUser;
 
 
 
