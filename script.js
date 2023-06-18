@@ -181,12 +181,9 @@ class UserManager {
 
 let Users = new UserManager(); // create array of User objects
 
-
-
-
 }
 
-
+// Authentication
 
 
 
