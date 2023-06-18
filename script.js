@@ -151,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // USER CLASS AND FUNCTIONS
 class User {
+
   constructor(userId, userName, userEmail, userPassword) {
     this.userId = userId;
     this.userName = userName;
@@ -158,32 +159,13 @@ class User {
     this.userPassword = userPassword;
   }
 
-  DisplayUserInfo() {
-    console.log(this.userId);
-    console.log(this.userName);
-    console.log(this.userEmail);
-    console.log(this.userPassword);
-  }
-}
 
-class UserManager {
-  constructor() {
-    this.UserManager = []; // create array of Users
-  }
 
-  registerUser(userId, userName, userEmail, userPassword) {
-    // add new User to array of UserManager
-    let u = new User(userId, userName, userEmail, userPassword);
-    this.UserManager.push(u);
-  }
+
 
 }
 
-let Users = new UserManager(); // create array of User objects
 
-}
-
-// Authentication
 
 
 
