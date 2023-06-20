@@ -7,5 +7,5 @@ files:
     destination: /var/www/html/
   - source: /style.css
     destination: /var/www/html/
-  - source: /images/
+  - source: /images/indexLogo.png
     destination: /var/www/html/
