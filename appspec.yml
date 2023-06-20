@@ -7,3 +7,5 @@ files:
     destination: /var/www/html/
   - source: /style.css
     destination: /var/www/html/
+  - source: /images/
+    destination: /var/www/html/
