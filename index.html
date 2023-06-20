@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fridge Management</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Fridge Management</h1>
-    </header>
+    <div class="row">
+        <div class="header">
+            <div class="logo col-1">
+            <img src="indexLogo.png" alt="Fridge Management Logo">
+            </div>
+            <h1 class="header-title col-9">Fridge Management</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li onclick="showContent('content1')">Add Item</li>
+                <li onclick="showContent('content2')">Check Expiration</li>
+                <li onclick="showContent('content3')">Search Item</li>
+                <li onclick="showContent('content4')">Monitor Quantity</li>
+                <li onclick="showContent('content5')">Remove Expired</li>
+                <li onclick="showContent('content6')">Generate List</li>
+            </ul>
+        </div>
 
-    <main>
-        <section id="add-item">
-            <h2>Add Item to Fridge</h2>
-            <form id="add-item-form">
-                <input type="text" id="item-name" placeholder="Item name" required>
-                <input type="date" id="expiration-date" required>
-                <input type="number" id="quantity" placeholder="Quantity" required>
-                <button type="submit">Add Item</button>
-            </form>
-        </section>
+        <div class="col-9">
+            <div id="content1">
+                <h2>Add Item to Fridge</h2>
+                <form id="add-item-form">
+                    <input type="text" id="item-name" placeholder="Item name" required>
+                    <input type="date" id="expiration-date" required>
+                    <input type="number" id="quantity" placeholder="Quantity" required>
+                    <button type="submit">Add Item</button>
+                </form>
+            </div>
+            <div id="content2" class="hide">
+                <h2>Check Expiration Dates</h2>
+                <ul id="item-list"></ul>
+            </div>
+            <div id="content3" class="hide">
+                <h2>Search for Specific Item</h2>
+                <input type="text" id="search-input" placeholder="Search item">
+                <ul id="search-results"></ul>
+            </div>
+            <div id="content4" class="hide">
+                <h2>Monitor Quantity</h2>
+                <ul id="quantity-list"></ul>
+            </div>
+            <div id="content5" class="hide">
+                <h2>Remove Expired Item</h2>
+                <ul id="expired-list"></ul>
+            </div>
+            <div id="content6" class="hide">
+                <h2>Generate Shopping List</h2>
+                <button id="generate-list-btn">Generate</button>
+                <ul id="shopping-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(contentId) {
+            var contentDivs = document.querySelectorAll(".col-9 > div");
+            for (var i = 0; i < contentDivs.length; i++) {
+                contentDivs[i].classList.add("hide");
+            }
 
-        <section id="check-expiration">
-            <h2>Check Expiration Dates</h2>
-            <ul id="item-list"></ul>
-        </section>
-
-        <section id="search-item">
-            <h2>Search for Specific Item</h2>
-            <input type="text" id="search-input" placeholder="Search item">
-            <ul id="search-results"></ul>
-        </section>
-
-        <section id="monitor-quantity">
-            <h2>Monitor Quantity</h2>
-            <ul id="quantity-list"></ul>
-        </section>
-
-        <section id="remove-expired">
-            <h2>Remove Expired Item</h2>
-            <ul id="expired-list"></ul>
-        </section>
-
-        <section id="generate-list">
-            <h2>Generate Shopping List</h2>
-            <button id="generate-list-btn">Generate</button>
-            <ul id="shopping-list"></ul>
-        </section>
-    </main>
+            var selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.classList.remove("hide");
+            }
+        }
+      </script>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
