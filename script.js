@@ -135,6 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // need work
+
   generateListBtn.addEventListener('click', function () {
     shoppingList.innerHTML = '';
 
@@ -178,7 +180,15 @@ class UserManager {
     this.UserManager.push(u);
   }
 
-  authenticateUser(userName, userPassword) {}
+  authenticateUser(userName0, userPassword0) {
+    for (var i = 0; i < this.UserManager.length; i++) {
+      if (userName0 == this.UserManager[i].userName) {
+        console.log(i);
+
+        return userPassword0 == this.UserManager[i].userPassword;
+      }
+    }
+  }
 }
 
 let Users = new UserManager(); // create array of User objects
