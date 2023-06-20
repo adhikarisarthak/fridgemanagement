@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
+      removeButton.style.marginLeft = '5px'; // Add left margin to create space
       removeButton.addEventListener('click', function () {
         removeItem(index);
       });
