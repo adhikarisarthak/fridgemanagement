@@ -1,0 +1,8 @@
+{% extends "fridge_management/base.html" %}
+{% block content %}
+<h1>About Fridge Management System</h1>
+    <h2>Member List</h2>
+    {% for member in members %}
+    <li>{{ member.name }} and ID : {{ member.id }}</li>
+    {% endfor %}
+{% endblock content %}
