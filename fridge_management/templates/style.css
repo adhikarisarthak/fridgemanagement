@@ -1,0 +1,174 @@
+/* Global Box Sizing and Clearfix */
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Column Layout Styles */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* Font Styles */
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+/* Heading Styles */
+h1, h2 {
+    margin: 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+button {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button Hover Styles */
+button:hover {
+    background-color: #555;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List Item Styles */
+li {
+    margin-bottom: 5px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.hide {
+    display: none;
+}
