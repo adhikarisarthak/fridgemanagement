@@ -1,0 +1,15 @@
+{% extends "fridge_app/base.html" %}
+{% block content %}
+
+    {% for member in members %}
+        <article class="media content-section">
+          <div class="media-body">
+            <ul class="list-unstyled"}
+                <li>{{ member.name }}</li>
+                <li>{{ member.id }}</li>
+            </ul>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
+
