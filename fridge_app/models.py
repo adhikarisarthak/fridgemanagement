@@ -1,23 +1,27 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
+
 
 class Fridge(models.Model):
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
+
 class Item(models.Model):
     name = models.CharField(max_length=200)
     category = models.CharField(max_length=200)
     qty = models.IntegerField()
     fridge = models.ForeignKey(Fridge, on_delete=models.CASCADE)
-    expiry_date = models.DateField()
+    expiry_date = models.DateTimeField(default=timezone.now)
 
     def is_expired(self):
-        return self.expiry_date < datetime.date.today()
+        return self.expiry_date < models.DateField(default=timezone.now)
 
-    def remove_expired_items(self):
-        Item.objects.filter(expiry_date__lt=datetime.date.today()).delete()
+    @staticmethod
+    def remove_expired_items():
+        Item.objects.filter(expiry_date__lt=models.DateTimeField(default=timezone.now())).delete()
 
     @staticmethod
     def search_items(query):
@@ -25,7 +29,7 @@ class Item(models.Model):
 
     @staticmethod
     def generate_shopping_list():
-        items = Item.objects.filter(expiry_date__gte=datetime.date.today())
+        items = Item.objects.filter(expiry_date__gte=models.DateTimeField(default=timezone.now))
         shopping_list = []
         for item in items:
             if item.qty > 0:
