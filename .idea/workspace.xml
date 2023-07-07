@@ -10,6 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added database and changed data to use the database data">
+      <change beforePath="$PROJECT_DIR$/.idea/CS411_FM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_FM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +76,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -112,6 +118,7 @@
       <workItem from="1688519759741" duration="15478000" />
       <workItem from="1688680924472" duration="73000" />
       <workItem from="1688682371762" duration="1039000" />
+      <workItem from="1688695499384" duration="690000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
