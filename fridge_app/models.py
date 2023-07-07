@@ -16,9 +16,6 @@ class Item(models.Model):
     fridge = models.ForeignKey(Fridge, on_delete=models.CASCADE)
     expiry_date = models.DateTimeField(default=timezone.now)
 
-    def __str__(self):
-        return self.name
-
     def is_expired(self):
         return self.expiry_date < models.DateField(default=timezone.now)
 
