@@ -9,13 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added database">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/fridges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/sortCategory.html" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added database and changed data to use the database data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688687665104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added database and changed data to use the database data">
+      <created>1688689727519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688689727519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +192,7 @@
     <MESSAGE value="FM_GitTest" />
     <MESSAGE value="New changelist" />
     <MESSAGE value="Added database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database" />
+    <MESSAGE value="Added database and changed data to use the database data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added database and changed data to use the database data" />
   </component>
 </project>
