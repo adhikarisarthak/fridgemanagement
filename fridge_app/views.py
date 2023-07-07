@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Item, Fridge
 
 item_list = [
     {
@@ -58,10 +59,38 @@ members = [
 # Create your views here.
 def home(request):
     context = {
-        'item_list': item_list,
+        'item_list': Item.objects.all(),
+        'fridge_list': Fridge.objects.all(),
         'title': 'Home',
     }
     return render(request, 'fridge_app/home.html', context)
+
+
+def sort_category(request):
+    context = {
+        'item_list': Item.objects.all(),
+        'fridge_list': Fridge.objects.all(),
+        'title': 'Category',
+    }
+    return render(request, 'fridge_app/sortCategory.html.html', context)
+
+
+def expired(request):
+    context = {
+        'item_list': Item.objects.all(),
+        'fridge_list': Fridge.objects.all(),
+        'title': 'Expired',
+    }
+    return render(request, 'fridge_app/expired.html', context)
+
+
+def fridges(request):
+    context = {
+        'item_list': Item.objects.all(),
+        'fridge_list': Fridge.objects.all(),
+        'title': 'Fridges',
+    }
+    return render(request, 'fridge_app/fridges.html', context)
 
 
 def about(request):

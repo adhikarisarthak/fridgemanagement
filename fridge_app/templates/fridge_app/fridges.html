@@ -1,0 +1,29 @@
+{% extends "fridge_app/base.html" %}
+
+{% block content %}
+    <h1>Item List</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in item_list %}
+                <tr>
+                    <td><input type="text" name="id" value="{{ item.id }}"></td>
+                    <td><input type="text" name="name" value="{{ item.name }}"></td>
+                    <td><input type="text" name="qty" value="{{ item.qty }}"></td>
+                    <td><input type="text" name="category" value="{{ item.category }}"></td>
+                    <td><input type="text" name="qty" value="{{ item.expiry_date }}"></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+
+{% endblock content %}
