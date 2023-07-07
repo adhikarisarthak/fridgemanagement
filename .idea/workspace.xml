@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added database and changed data to use the database data">
-      <change beforePath="$PROJECT_DIR$/.idea/CS411_FM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_FM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fridge_app/migrations/0003_alter_item_expiry_date.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +48,12 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="815ec107-05e7-480d-b2bd-92e1623f9c92" />
-        <option name="url" value="https://github.com/kyawminthu20/CS411_FM.git" />
+        <option name="url" value="https://github.com/adhikarisarthak/fridgemanagement.git" />
       </UrlAndAccount>
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2S5nTDLn9foQBUeldlhnq5AXbGv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688700225666</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added database and changed data to use the database data">
+      <created>1688701380861</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688701380861</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

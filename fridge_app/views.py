@@ -71,6 +71,7 @@ class ItemListView(ListView):
     model = Item
     template_name = 'fridge_app/home.html'
     context_object_name = 'item_list'
+    ordering = ['expiry_date']
 
 
 def sort_category(request):

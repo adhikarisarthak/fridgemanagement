@@ -20,8 +20,9 @@
                     <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm"></td>
                     <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm"></td>
                     <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm"></td>
-                    <td><input type="text" name="expiry_date" value="{% if item.expiry_date %}{{ item.expiry_date }}{% else %}No expiry date{% endif %}" class = "form-control"></td>
+                    <td><input type="text" name="expiry_date" value="{% if item.expiry_date %}{{ item.expiry_date|date:"F d Y" }}{% else %}No expiry date{% endif %}" class = "form-control"></td>
                 </tr>
+                <p>{{ item.expiry_date }}</p>
             {% endfor %}
         </tbody>
     </table>
