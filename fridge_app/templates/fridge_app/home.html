@@ -22,9 +22,12 @@
                 <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm">
                 </td>
 
-                <td><input type="text" name="expiry_date"
+<!--                 <td><input type="text" name="expiry_date"
                            value="{% if item.expiry_date %}{{ item.expiry_date }}{% else %}No expiry date{% endif %}"
-                           class="form-control"></td>
+                           class="form-control"></td> -->
+                <td><input type="text" name="expiry_date" value="{% if item.expiry_date %}{{ item.expiry_date }}{% else %}No expiry date{% endif %}" class="form-control">
+                </td>
+
 
             </tr>
         {% endfor %}
