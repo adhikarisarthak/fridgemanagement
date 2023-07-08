@@ -9,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Name modify back" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Yogurt">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688799175571</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Yogurt">
+      <option name="closed" value="true" />
+      <created>1688799345767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799345767</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,11 +259,11 @@
     <MESSAGE value="Added database" />
     <MESSAGE value="Added database and changed data to use the database data" />
     <MESSAGE value="automatic update" />
-    <MESSAGE value="Yogurt" />
     <MESSAGE value="Yogurt 2" />
     <MESSAGE value="Name modify" />
     <MESSAGE value="Name modify back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Name modify back" />
+    <MESSAGE value="Yogurt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yogurt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fridgemanagement$urls.coverage" NAME="urls Coverage Results" MODIFIED="1688786480009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fridge_app" />

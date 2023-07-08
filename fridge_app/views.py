@@ -33,8 +33,8 @@ item_list = [
     },
     {
         "id": 4,
-        "name": "Yogurt",
-        "category": "Diary",
+        "name": "Maple Syrup",
+        "category": "Desserts",
         "qty": 2,
         "fridge_id": 2,
         "expiry_date": "2023-03-19T22:00:00"
