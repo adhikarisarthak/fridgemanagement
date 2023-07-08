@@ -9,7 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added database and changed data to use the database data">
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="item_detail.html page does not matter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +31,12 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -47,6 +50,12 @@
         <option name="url" value="https://github.com/kyawminthu20/CS411_FM.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2S5nTDLn9foQBUeldlhnq5AXbGv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -72,7 +81,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -85,10 +94,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="CS411_FM.settings" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../CS411_FM/bin/python" />
-      <option name="SDK_NAME" value="Python 3.9 (CS411_FM)" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -117,6 +125,8 @@
       <workItem from="1688682371762" duration="1039000" />
       <workItem from="1688695499384" duration="690000" />
       <workItem from="1688772849094" duration="162000" />
+      <workItem from="1688773212889" duration="6177000" />
+      <workItem from="1688806808704" duration="707000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -146,7 +156,77 @@
       <option name="project" value="LOCAL" />
       <updated>1688691942723</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added database and changed data to use the database data">
+      <created>1688773434830</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688773434830</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added database and changed data to use the database data">
+      <created>1688773542907</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688773542907</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Yogurt">
+      <option name="closed" value="true" />
+      <created>1688798941285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688798941285</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Yogurt 2">
+      <option name="closed" value="true" />
+      <created>1688799098239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799098239</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Name modify">
+      <option name="closed" value="true" />
+      <created>1688799145442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799145442</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Name modify back">
+      <option name="closed" value="true" />
+      <created>1688799175571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799175571</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Yogurt">
+      <option name="closed" value="true" />
+      <created>1688799345767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799345767</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Maple Syrup update">
+      <option name="closed" value="true" />
+      <created>1688799608217</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688799608217</updated>
+    </task>
+    <task id="LOCAL-00013" summary="item_detail.html page does not matter">
+      <option name="closed" value="true" />
+      <created>1688801615282</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688801615282</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +258,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="Django-Backend" />
                       </list>
                     </value>
                   </entry>
@@ -203,6 +283,16 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="Added database" />
     <MESSAGE value="Added database and changed data to use the database data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database and changed data to use the database data" />
+    <MESSAGE value="automatic update" />
+    <MESSAGE value="Yogurt 2" />
+    <MESSAGE value="Name modify" />
+    <MESSAGE value="Name modify back" />
+    <MESSAGE value="Yogurt" />
+    <MESSAGE value="Maple Syrup update" />
+    <MESSAGE value="item_detail.html page does not matter" />
+    <option name="LAST_COMMIT_MESSAGE" value="item_detail.html page does not matter" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fridgemanagement$urls.coverage" NAME="urls Coverage Results" MODIFIED="1688786480009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fridge_app" />
   </component>
 </project>
