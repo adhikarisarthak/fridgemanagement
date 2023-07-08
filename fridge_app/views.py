@@ -55,7 +55,7 @@ members = [
         "id": "bv9292",
     },
     {
-        "name": "Yichao Hao",
+        "name": "Yichao Hao fixed",
         "id": "ur5215",
     }
 ]
