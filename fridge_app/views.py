@@ -33,7 +33,7 @@ item_list = [
     },
     {
         "id": 4,
-        "name": "Milk",
+        "name": "Yogurt",
         "category": "Diary",
         "qty": 2,
         "fridge_id": 2,
