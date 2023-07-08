@@ -1,4 +1,9 @@
 from django.shortcuts import render
+from django.views.generic import (
+    ListView,
+    DetailView,
+    CreateView
+)
 from .models import Item, Fridge
 
 item_list = [
@@ -66,13 +71,42 @@ def home(request):
     return render(request, 'fridge_app/home.html', context)
 
 
+class ItemListView(ListView):
+    model = Item
+    template_name = 'fridge_app/home.html'
+    context_object_name = 'item_list'
+
+
+class ItemDetailView(DetailView):
+    model = Item
+
+
+class ItemCreateView(CreateView):
+    model = Item
+    fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+
+
+class FridgeListView(ListView):
+    model = Fridge
+    template_name = 'fridge_app/fridges.html'
+    context_object_name = 'fridge_list'
+
+
+class FridgeDetailView(DetailView):
+    model = Fridge
+
+
+class FridgeCreateView(CreateView):
+    model = Fridge
+
+
 def sort_category(request):
     context = {
         'item_list': Item.objects.all(),
         'fridge_list': Fridge.objects.all(),
         'title': 'Category',
     }
-    return render(request, 'fridge_app/sortCategory.html.html', context)
+    return render(request, 'fridge_app/sortCategory.html', context)
 
 
 def expired(request):
