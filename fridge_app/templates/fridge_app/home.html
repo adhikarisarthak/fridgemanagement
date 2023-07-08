@@ -16,7 +16,7 @@
         <tbody>
             {% for item in item_list %}
                 <tr>
-                    <td><input type="text" name="id" value="{{ item.id }}" class="form-control form-control-sm"></td>
+                    <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.id }}</a></td>
                     <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm"></td>
                     <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm"></td>
                     <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm"></td>
