@@ -5,24 +5,29 @@
 
     <table class="table">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Category</th>
-                <th>Expiry Date</th>
-            </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Expiry Date</th>
+        </tr>
         </thead>
         <tbody>
-            {% for item in item_list %}
-                <tr>
-                    <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.id }}</a></td>
-                    <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm"></td>
-                    <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm"></td>
-                    <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm"></td>
-                    <td><input type="text" name="expiry_date" value="{% if item.expiry_date %}{{ item.expiry_date }}{% else %}No expiry date{% endif %}" class = "form-control"></td>
-                </tr>
-            {% endfor %}
+        {% for item in item_list %}
+            <tr>
+                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.id }}</a></td>
+                <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm"></td>
+                <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm"></td>
+                <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm">
+                </td>
+
+                <td><input type="text" name="expiry_date"
+                           value="{% if item.expiry_date %}{{ item.expiry_date }}{% else %}No expiry date{% endif %}"
+                           class="form-control"></td>
+
+            </tr>
+        {% endfor %}
         </tbody>
     </table>
 
