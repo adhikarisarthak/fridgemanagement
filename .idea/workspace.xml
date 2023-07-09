@@ -9,7 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Created &quot;users&quot; app for sign in and registration. Created sign-up page.">
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="fixed new users not saving.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
@@ -132,7 +132,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="4475000" />
+      <workItem from="1688939845422" duration="4842000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -248,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688940665413</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed new users not saving.">
+      <option name="closed" value="true" />
+      <created>1688945597543</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688945597543</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +322,8 @@
     <MESSAGE value="item_detail.html page does not matter" />
     <MESSAGE value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
     <MESSAGE value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
+    <MESSAGE value="fixed new users not saving." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed new users not saving." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
