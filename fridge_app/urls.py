@@ -18,4 +18,6 @@ urlpatterns = [
     path('fridge/<int:pk>/', FridgeDetailView.as_view(), name='fridge-detail'),
     path('fridge/new/', FridgeCreateView.as_view(), name='fridge-create'),
     path('about/', views.about, name='fridge-about'),
+    path('item/expired', views.expired, name='fridge-expired'),
+    path('shopping', views.shopping, name='fridge-shopping'),
 ]

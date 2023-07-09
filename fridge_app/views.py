@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from datetime import datetime
+
 from django.views.generic import (
     ListView,
     DetailView,
@@ -68,6 +70,8 @@ def home(request):
         'fridge_list': Fridge.objects.all(),
         'title': 'Home',
     }
+    for i in Item.objects.all():
+        print(i.expiry_date)
     return render(request, 'fridge_app/home.html', context)
 """
 
@@ -86,6 +90,11 @@ class ItemCreateView(CreateView):
     model = Item
     # template_name = 'fridge_app/item_form.html'
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['fridge_list'] = Fridge.objects.all()
+        return context
 
 
 class FridgeListView(ListView):
@@ -113,11 +122,20 @@ def sort_category(request):
 
 def expired(request):
     context = {
-        'item_list': Item.objects.all(),
+        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
         'fridge_list': Fridge.objects.all(),
         'title': 'Expired',
     }
     return render(request, 'fridge_app/expired.html', context)
+
+
+def shopping(request):
+    context = {
+        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.all(),
+        'title': 'Shopping',
+    }
+    return render(request, 'fridge_app/shopping_list.html', context)
 
 
 def fridges(request):
