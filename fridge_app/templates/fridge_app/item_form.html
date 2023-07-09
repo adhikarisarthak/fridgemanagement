@@ -22,9 +22,11 @@
 
         <div class="form-group">
             <label for="id_fridge">Fridge:</label>
-            <input class="form-control" id="id_fridge" name="fridge" required>
-            <!-- Add options for fridge selection here -->
-            </input>
+            <select class="form-control" id="id_fridge" name="fridge" required>
+                {% for fridge in fridge_list %}
+                    <option value='{{ fridge.id }}'> {{ fridge.name }}</option>
+                {% endfor %}
+            </select>
         </div>
 
         <div class="form-group">
