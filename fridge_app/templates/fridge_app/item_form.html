@@ -1,13 +1,39 @@
 {% extends "fridge_app/base.html" %}
 {% block content %}
-    <form method="POST">
+    <h1>Add Item</h1>
+    <form class="form" method="POST" action="{% url 'item_create' %}">
         {% csrf_token %}
-        <label for="item-name">Item Name:</label>
-        <input type="text" id="item-name" name="item_name">
-        <br>
-        <label for="expiry-date">Expiry Date:</label>
-        <input type="date" id="expiry-date" name="expiry_date">
-        <br>
-        <input type="submit" value="Add Item">
+
+        <!-- Fields for the form -->
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            <input class="form-control" type="text" id="id_name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_category">Category:</label>
+            <input class="form-control" type="text" id="id_category" name="category" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_qty">Quantity:</label>
+            <input class="form-control" type="number" id="id_qty" name="qty" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_fridge">Fridge:</label>
+            <input class="form-control" id="id_fridge" name="fridge" required>
+            <!-- Add options for fridge selection here -->
+            </input>
+        </div>
+
+        <div class="form-group">
+            <label for="id_expiry_date">Expiry Date:</label>
+            <input class="form-control" type="date" id="id_expiry_date" name="expiry_date" required>
+        </div>
+
+        <!-- Submit button -->
+        <button class="btn btn-primary" type="submit">Save</button>
     </form>
+
 {% endblock content %}
