@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from datetime import datetime
+
 from django.views.generic import (
     ListView,
     DetailView,
@@ -120,7 +122,7 @@ def sort_category(request):
 
 def expired(request):
     context = {
-        'item_list': Item.objects.all(),
+        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
         'fridge_list': Fridge.objects.all(),
         'title': 'Expired',
     }

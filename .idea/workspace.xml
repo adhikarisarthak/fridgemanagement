@@ -9,16 +9,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="added add items, item list">
-      <change afterPath="$PROJECT_DIR$/fridge_app/migrations/0003_alter_item_expiry_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="item_detail.html page does not matter">
+      <change beforePath="$PROJECT_DIR$/.idea/CS411_FM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_FM.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,9 +62,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectId" id="2S5nTDLn9foQBUeldlhnq5AXbGv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -103,8 +99,8 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="CS411_FM.settings" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../CS411_FM/bin/python" />
-      <option name="SDK_NAME" value="Python 3.9 (CS411_FM)" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="SDK_NAME" value="Python 3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -236,35 +232,7 @@
       <option name="project" value="LOCAL" />
       <updated>1688801615282</updated>
     </task>
-    <task id="LOCAL-00014" summary="Added database and changed data to use the database data">
-      <created>1688854342576</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1688854342576</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added database and changed data to use the database data">
-      <created>1688861519813</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1688861519813</updated>
-    </task>
-    <task id="LOCAL-00016" summary="added add items, item list">
-      <created>1688871183732</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1688871183732</updated>
-    </task>
-    <task id="LOCAL-00017" summary="added add items, item list">
-      <created>1688871500341</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1688871500341</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +288,7 @@
     <MESSAGE value="FM_GitTest" />
     <MESSAGE value="New changelist" />
     <MESSAGE value="Added database" />
+    <MESSAGE value="Added database and changed data to use the database data" />
     <MESSAGE value="automatic update" />
     <MESSAGE value="Yogurt 2" />
     <MESSAGE value="Name modify" />
@@ -327,9 +296,18 @@
     <MESSAGE value="Yogurt" />
     <MESSAGE value="Maple Syrup update" />
     <MESSAGE value="item_detail.html page does not matter" />
-    <MESSAGE value="Added database and changed data to use the database data" />
-    <MESSAGE value="added add items, item list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added add items, item list" />
+    <option name="LAST_COMMIT_MESSAGE" value="item_detail.html page does not matter" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/fridge_app/views.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fridgemanagement$urls.coverage" NAME="urls Coverage Results" MODIFIED="1688786480009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fridge_app" />
