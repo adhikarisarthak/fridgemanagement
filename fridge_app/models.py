@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.urls import reverse
 
 
 class Fridge(models.Model):
@@ -15,6 +16,9 @@ class Item(models.Model):
     qty = models.IntegerField()
     fridge = models.ForeignKey(Fridge, on_delete=models.CASCADE)
     expiry_date = models.DateTimeField(default=timezone.now)
+
+    def get_absolute_url(self):
+        return reverse('item-detail', kwargs={'pk': self.pk})
 
     def is_expired(self):
         return self.expiry_date < models.DateField(default=timezone.now)

@@ -60,8 +60,8 @@ members = [
     }
 ]
 
-
 # Create your views here.
+"""
 def home(request):
     context = {
         'item_list': Item.objects.all(),
@@ -69,6 +69,7 @@ def home(request):
         'title': 'Home',
     }
     return render(request, 'fridge_app/home.html', context)
+"""
 
 
 class ItemListView(ListView):
@@ -83,6 +84,7 @@ class ItemDetailView(DetailView):
 
 class ItemCreateView(CreateView):
     model = Item
+    # template_name = 'fridge_app/item_form.html'
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
 
 
