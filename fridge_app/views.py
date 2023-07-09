@@ -129,6 +129,15 @@ def expired(request):
     return render(request, 'fridge_app/expired.html', context)
 
 
+def shopping(request):
+    context = {
+        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.all(),
+        'title': 'Shopping',
+    }
+    return render(request, 'fridge_app/shopping_list.html', context)
+
+
 def fridges(request):
     context = {
         'item_list': Item.objects.all(),
