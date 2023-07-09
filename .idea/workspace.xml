@@ -9,24 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items">
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/users/register'.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CS411_FM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_FM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__New_changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__New_changelist_.xml" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Created &quot;users&quot; app for sign in and registration. Created sign-up page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS411_FM/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS411_FM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +132,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="707000" />
+      <workItem from="1688939845422" duration="4475000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -254,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688898074961</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created &quot;users&quot; app for sign in and registration. Created sign-up page.">
+      <option name="closed" value="true" />
+      <created>1688940665413</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688940665413</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +313,8 @@
     <MESSAGE value="Maple Syrup update" />
     <MESSAGE value="item_detail.html page does not matter" />
     <MESSAGE value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
+    <MESSAGE value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
