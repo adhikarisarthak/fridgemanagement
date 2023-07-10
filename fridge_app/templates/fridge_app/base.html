@@ -55,23 +55,21 @@
         {% endfor %}
     {% endif %}
     <div class="row">
-        {% block content %}
-            <div class="col-md-4">
-                <div class="content-section">
-                    <h3>Menu</h3>
-                    <p class='text-muted'>Fridge Management
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-light"><a href="/fridge">Fridges</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="/">Item List</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="/item/new">Add Item</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="/item/expired">Expired Items</a></li>
-                        <li class="list-group-item list-group-item-light"><a href="/shopping">Shopping List</a></li>
-                    </ul>
-                    </p>
-                </div>
+        <div class="col-md-4">
+            <div class="content-section">
+                <h3>Menu</h3>
+                <p class='text-muted'>Fridge Management
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-light"><a href="/fridge">Fridges</a></li>
+                    <li class="list-group-item list-group-item-light"><a href="/">Item List</a></li>
+                    <li class="list-group-item list-group-item-light"><a href="/item/new">Add Item</a></li>
+                    <li class="list-group-item list-group-item-light"><a href="/item/expired">Expired Items</a></li>
+                    <li class="list-group-item list-group-item-light"><a href="/shopping">Shopping List</a></li>
+                </ul>
+                </p>
             </div>
-            <div class="col-md-8">{% block content %}{% endblock %}</div>
-        {% endblock %}
+        </div>
+        <div class="col-md-8">{% block content %}{% endblock %}</div>
     </div>
 </main>
 
