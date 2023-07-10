@@ -9,7 +9,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added django crispy forms and redesigned sign-up page" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="linked login/register pages to nav buttons.">
+      <change afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS411_FM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,6 +91,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\fridge_app\templates" />
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\templates\bootstrap4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CS411_FM" type="Python.DjangoServer" factoryName="Django server">
       <module name="CS411_FM" />
@@ -129,7 +139,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="8278000" />
+      <workItem from="1688939845422" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -269,7 +279,47 @@
       <option name="project" value="LOCAL" />
       <updated>1688949039148</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added django crispy forms and redesigned sign-up page">
+      <option name="closed" value="true" />
+      <created>1688949164495</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688949164495</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Modified register page and added links">
+      <option name="closed" value="true" />
+      <created>1688951261872</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688951261872</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Created login page and implemented login/logout functionality">
+      <option name="closed" value="true" />
+      <created>1688952470810</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1688952470810</updated>
+    </task>
+    <task id="LOCAL-00022" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953054233</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953054233</updated>
+    </task>
+    <task id="LOCAL-00023" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953063726</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953063726</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +388,10 @@
     <MESSAGE value="fixed new users not saving." />
     <MESSAGE value="Modified user registration form" />
     <MESSAGE value="Added django crispy forms and redesigned sign-up page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added django crispy forms and redesigned sign-up page" />
+    <MESSAGE value="Modified register page and added links" />
+    <MESSAGE value="Created login page and implemented login/logout functionality" />
+    <MESSAGE value="linked login/register pages to nav buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="linked login/register pages to nav buttons." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
