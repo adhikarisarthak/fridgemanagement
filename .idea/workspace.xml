@@ -9,9 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="created and wrote readme.md file">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="included implementation doc">
+      <change afterPath="$PROJECT_DIR$/screen1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +132,8 @@
       <workItem from="1688806808704" duration="707000" />
       <workItem from="1688994043707" duration="22000" />
       <workItem from="1688994899686" duration="26000" />
+      <workItem from="1688995616163" duration="539000" />
+      <workItem from="1689020649873" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -251,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688993114727</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="included implementation doc">
+      <option name="closed" value="true" />
+      <created>1688995698878</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688995698878</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +331,8 @@
     <MESSAGE value="item_detail.html page does not matter" />
     <MESSAGE value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
     <MESSAGE value="created and wrote readme.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="created and wrote readme.md file" />
+    <MESSAGE value="included implementation doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="included implementation doc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
