@@ -42,25 +42,31 @@
     </nav>
 </header>
 <main role="main" class="container">
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="content-section">
-                <h3>Menu</h3>
-                <p class='text-muted'>Fridge Management
-                <ul class="list-group">
-                    <li class="list-group-item list-group-item-light"><a href="/fridge">Fridges</a></li>
-                    <li class="list-group-item list-group-item-light"><a href="/">Item List</a></li>
-                    <li class="list-group-item list-group-item-light"><a href="/item/new">Add Item</a></li>
-                    <li class="list-group-item list-group-item-light"><a href="/item/expired">Expired Items</a></li>
-                    <li class="list-group-item list-group-item-light"><a href="/shopping">Shopping List</a></li>
-                </ul>
-                </p>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
             </div>
-        </div>
-        <div class="col-md-8">
-            {% block content %}{% endblock %}
-        </div>
+        {% endfor %}
+    {% endif %}
+    <div class="row">
+        {% block content %}
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h3>Menu</h3>
+                    <p class='text-muted'>Fridge Management
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-light"><a href="/fridge">Fridges</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="/">Item List</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="/item/new">Add Item</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="/item/expired">Expired Items</a></li>
+                        <li class="list-group-item list-group-item-light"><a href="/shopping">Shopping List</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8"></div>
+        {% endblock %}
     </div>
 </main>
 
