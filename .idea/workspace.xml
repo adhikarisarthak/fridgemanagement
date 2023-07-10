@@ -9,11 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="fixed new users not saving.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added django crispy forms and redesigned sign-up page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,6 +77,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "Django-Backend",
+    "last_opened_file_path": "C:/Users/phant/OneDrive - horizon.csueastbay.edu/Documents/Code Projects/CS 401/Summer 2023/django/fridge_app/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,7 +129,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="4842000" />
+      <workItem from="1688939845422" duration="8278000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -256,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688945597543</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Modified user registration form">
+      <option name="closed" value="true" />
+      <created>1688945940528</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688945940528</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added django crispy forms and redesigned sign-up page">
+      <option name="closed" value="true" />
+      <created>1688949039148</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688949039148</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +336,9 @@
     <MESSAGE value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
     <MESSAGE value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
     <MESSAGE value="fixed new users not saving." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed new users not saving." />
+    <MESSAGE value="Modified user registration form" />
+    <MESSAGE value="Added django crispy forms and redesigned sign-up page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added django crispy forms and redesigned sign-up page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
