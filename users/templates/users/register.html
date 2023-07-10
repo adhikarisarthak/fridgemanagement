@@ -1,7 +1,7 @@
 {% extends "fridge_app/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section">
+    <div class="content-section" style="margin-left: 20%; margin-right: 20%">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
@@ -14,7 +14,7 @@
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Already have an account? <a class="ml-2" href="#">Sign In</a>
+                Already have an account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
             </small>
         </div>
     </div>

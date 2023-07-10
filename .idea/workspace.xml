@@ -9,7 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added django crispy forms and redesigned sign-up page" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Added django crispy forms and redesigned sign-up page">
+      <change afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS411_FM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,6 +93,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\fridge_app\templates" />
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\templates\bootstrap4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CS411_FM" type="Python.DjangoServer" factoryName="Django server">
       <module name="CS411_FM" />
@@ -129,7 +141,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="8278000" />
+      <workItem from="1688939845422" duration="10328000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -269,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688949039148</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added django crispy forms and redesigned sign-up page">
+      <option name="closed" value="true" />
+      <created>1688949164495</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688949164495</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
