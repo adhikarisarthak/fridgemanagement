@@ -9,9 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Created login page and implemented login/logout functionality">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="linked login/register pages to nav buttons.">
+      <change afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS411_FM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688939845422" duration="12172000" />
+      <workItem from="1688939845422" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -302,7 +303,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688952470810</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953054233</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953054233</updated>
+    </task>
+    <task id="LOCAL-00023" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953063726</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953063726</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +390,8 @@
     <MESSAGE value="Added django crispy forms and redesigned sign-up page" />
     <MESSAGE value="Modified register page and added links" />
     <MESSAGE value="Created login page and implemented login/logout functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created login page and implemented login/logout functionality" />
+    <MESSAGE value="linked login/register pages to nav buttons." />
+    <option name="LAST_COMMIT_MESSAGE" value="linked login/register pages to nav buttons." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
