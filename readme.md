@@ -13,7 +13,7 @@ web app homepage: http://www.fridgemanagement.com/
 This application tracks what food and produce items you have in the fridge, and will automatically generate a list of
 expired items that need to be replaced for shopping lists.
 
-## App Use Guide
+## App User Guide
 
 On the 'add item' page (click 'add item' in the sidebar menu) add item to fridge database and include name, item
 category, quantity, and expiration date.
