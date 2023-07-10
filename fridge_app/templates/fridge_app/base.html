@@ -54,11 +54,9 @@
             </div>
         {% endfor %}
     {% endif %}
-    {% block content %}
-        <div class="row">
-
+    <div class="row">
+        {% block content %}
             <div class="col-md-4">
-
                 <div class="content-section">
                     <h3>Menu</h3>
                     <p class='text-muted'>Fridge Management
@@ -71,13 +69,10 @@
                     </ul>
                     </p>
                 </div>
-
             </div>
-
-            <div class="col-md-8"></div>
-
-        </div>
-    {% endblock %}
+            <div class="col-md-8">{% block content %}{% endblock %}</div>
+        {% endblock %}
+    </div>
 </main>
 
 <!-- Optional JavaScript -->
