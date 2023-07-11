@@ -1,0 +1,25 @@
+{% extends "fridge_app/base.html" %}
+
+{% block content %}
+    <h1>Item Detail</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ object.id }}</td>
+            <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
+            <td><input type="text" name="qty" value="{{ object.location }}" class="form-control form-control-sm"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+
+{% endblock content %}

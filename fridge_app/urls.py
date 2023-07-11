@@ -3,6 +3,7 @@ from .views import (
     ItemListView,
     ItemDetailView,
     ItemCreateView,
+    ItemUpdateView,
     FridgeListView,
     FridgeDetailView,
     FridgeCreateView,
@@ -20,4 +21,6 @@ urlpatterns = [
     path('about/', views.about, name='fridge-about'),
     path('item/expired', views.expired, name='fridge-expired'),
     path('shopping', views.shopping, name='fridge-shopping'),
+    path('item/update/<int:pk>/', ItemUpdateView.as_view(), name='item_update'),
+
 ]
