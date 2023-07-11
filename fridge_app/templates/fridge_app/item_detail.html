@@ -3,24 +3,31 @@
 {% block content %}
     <h1>Item Detail</h1>
 
+
     <table class="table">
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th>Category</th>
-                <th>Expiry Date</th>
-            </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Fridge</th>
+            <th>Expiry Date</th>
+        </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><input type="text" name="id" value="{{ object.id }}" class="form-control form-control-sm"></td>
-                <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
-                <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
-                <td><input type="text" name="category" value="{{ object.category}}" class="form-control form-control-sm"></td>
-                <td><input type="text" name="expiry_date" value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}" class = "form-control"></td>
-            </tr>
+        <tr>
+            <td>{{ object.id }}</td>
+            <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
+            <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
+            <td><input type="text" name="category" value="{{ object.category }}" class="form-control form-control-sm">
+            </td>
+            <td><input type="text" name="category" value="{{ object.fridge_id }}" class="form-control form-control-sm">
+            </td>
+            <td><input type="text" name="expiry_date"
+                       value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}"
+                       class="form-control"></td>
+        </tr>
         </tbody>
     </table>
 

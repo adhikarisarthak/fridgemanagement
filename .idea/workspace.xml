@@ -9,7 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="fixed screenshot error" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="Change list views to read only and clickable link forwarding to details for both Fridge and Items">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_detail.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +130,7 @@
       <workItem from="1688994899686" duration="26000" />
       <workItem from="1688995616163" duration="539000" />
       <workItem from="1689020649873" duration="982000" />
-      <workItem from="1689032482557" duration="4448000" />
+      <workItem from="1689032482557" duration="5312000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689089085381</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Change list views to read only and clickable link forwarding to details for both Fridge and Items">
+      <created>1689089335334</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689089335334</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +352,8 @@
     <MESSAGE value="created and wrote readme.md file" />
     <MESSAGE value="included implementation doc" />
     <MESSAGE value="fixed screenshot error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed screenshot error" />
+    <MESSAGE value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
