@@ -9,7 +9,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="working in progress for list of fridge name in item details" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="added user customization">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -65,27 +68,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Django-Backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Django-Backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phant/OneDrive - horizon.csueastbay.edu/Documents/Code Projects/CS 401/Summer 2023/django/fridge_app/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\fridge_app\templates" />
+      <recent name="C:\Users\phant\OneDrive - horizon.csueastbay.edu\Documents\Code Projects\CS 401\Summer 2023\django\templates\bootstrap4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="CS411_FM" type="Python.DjangoServer" factoryName="Django server">
       <module name="CS411_FM" />
@@ -96,7 +106,6 @@
         <env name="DJANGO_SETTINGS_MODULE" value="CS411_FM.settings" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/../CS411_FM/bin/python" />
-      <option name="SDK_NAME" value="Python 3.9 (CS411_FM)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -129,11 +138,7 @@
       <workItem from="1688772849094" duration="162000" />
       <workItem from="1688773212889" duration="6177000" />
       <workItem from="1688806808704" duration="707000" />
-      <workItem from="1688994043707" duration="22000" />
-      <workItem from="1688994899686" duration="26000" />
-      <workItem from="1688995616163" duration="539000" />
-      <workItem from="1689020649873" duration="982000" />
-      <workItem from="1689032482557" duration="5513000" />
+      <workItem from="1688939845422" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -294,7 +299,31 @@
       <option name="project" value="LOCAL" />
       <updated>1689090649268</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953054233</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953054233</updated>
+    </task>
+    <task id="LOCAL-00023" summary="linked login/register pages to nav buttons.">
+      <option name="closed" value="true" />
+      <created>1688953063726</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688953063726</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added user customization">
+      <option name="closed" value="true" />
+      <created>1689232447615</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689232447615</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,12 +388,15 @@
     <MESSAGE value="Maple Syrup update" />
     <MESSAGE value="item_detail.html page does not matter" />
     <MESSAGE value="Fixed expired.html layout and modified views.py so that the expired items page was functional and displayed only expired items" />
-    <MESSAGE value="created and wrote readme.md file" />
-    <MESSAGE value="included implementation doc" />
-    <MESSAGE value="fixed screenshot error" />
-    <MESSAGE value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
-    <MESSAGE value="working in progress for list of fridge name in item details" />
-    <option name="LAST_COMMIT_MESSAGE" value="working in progress for list of fridge name in item details" />
+    <MESSAGE value="Created &quot;users&quot; app for sign in and registration. Created sign-up page." />
+    <MESSAGE value="fixed new users not saving." />
+    <MESSAGE value="Modified user registration form" />
+    <MESSAGE value="Added django crispy forms and redesigned sign-up page" />
+    <MESSAGE value="Modified register page and added links" />
+    <MESSAGE value="Created login page and implemented login/logout functionality" />
+    <MESSAGE value="linked login/register pages to nav buttons." />
+    <MESSAGE value="added user customization" />
+    <option name="LAST_COMMIT_MESSAGE" value="added user customization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
