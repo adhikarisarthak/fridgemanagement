@@ -9,15 +9,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="update item is working.">
-      <change afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[New_changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__New_changelist_.xml" beforeDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="added delete item in the update html.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,27 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Django-Backend__Jul14__1730hr&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Django-Backend__Jul14__1730hr",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="CS411_FM" type="Python.DjangoServer" factoryName="Django server">
       <module name="CS411_FM" />
@@ -145,7 +142,7 @@
       <workItem from="1689032482557" duration="5513000" />
       <workItem from="1689193626570" duration="6707000" />
       <workItem from="1689365347300" duration="2748000" />
-      <workItem from="1689389771926" duration="1335000" />
+      <workItem from="1689389771926" duration="2654000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -320,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689381073715</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added delete item in the update html.">
+      <created>1689391348875</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689391348875</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +395,8 @@
     <MESSAGE value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
     <MESSAGE value="working in progress for list of fridge name in item details" />
     <MESSAGE value="update item is working." />
-    <option name="LAST_COMMIT_MESSAGE" value="update item is working." />
+    <MESSAGE value="added delete item in the update html." />
+    <option name="LAST_COMMIT_MESSAGE" value="added delete item in the update html." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

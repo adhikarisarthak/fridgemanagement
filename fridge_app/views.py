@@ -67,6 +67,7 @@ class FridgeCreateView(LoginRequiredMixin, CreateView):
 class ItemCreateView(LoginRequiredMixin, CreateView):
     model = Item
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+    success_url = '/items/'  # URL to redirect after successful create
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
