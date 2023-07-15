@@ -4,9 +4,11 @@ from .views import (
     ItemDetailView,
     ItemCreateView,
     ItemUpdateView,
+    ItemDeleteView,
     FridgeListView,
     FridgeDetailView,
     FridgeCreateView,
+
 )
 from . import views
 
@@ -23,5 +25,5 @@ urlpatterns = [
     path('shopping', views.shopping, name='fridge-shopping'),
     # path('item/<int:pk>/update/', ItemUpdateView.as_view(), name='item_update'),
     path('item/<int:pk>/update/', views.item_update_view, name='item_update'),
-
+    path('item/<int:pk>/delete/', ItemDeleteView.as_view(), name='item_delete'),
 ]

@@ -9,18 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="working in progress for list of fridge name in item details">
-      <change afterPath="$PROJECT_DIR$/fridge_app/forms.py" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="update item is working.">
+      <change afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[New_changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__New_changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS411_FM/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CS411_FM/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
     </list>
@@ -38,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,7 +45,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Django-Backend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,7 +85,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Django-Backend&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Django-Backend__Jul14__1730hr&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -150,6 +145,7 @@
       <workItem from="1689032482557" duration="5513000" />
       <workItem from="1689193626570" duration="6707000" />
       <workItem from="1689365347300" duration="2748000" />
+      <workItem from="1689389771926" duration="1335000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -317,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689127360041</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update item is working.">
+      <created>1689381073715</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1689381073715</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +390,8 @@
     <MESSAGE value="fixed screenshot error" />
     <MESSAGE value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
     <MESSAGE value="working in progress for list of fridge name in item details" />
-    <option name="LAST_COMMIT_MESSAGE" value="working in progress for list of fridge name in item details" />
+    <MESSAGE value="update item is working." />
+    <option name="LAST_COMMIT_MESSAGE" value="update item is working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

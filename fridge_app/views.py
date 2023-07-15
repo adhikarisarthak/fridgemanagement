@@ -85,7 +85,13 @@ class ItemUpdateView(LoginRequiredMixin, UpdateView):
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
     # form_class = ItemForm
     template_name = 'fridge_app/item_update.html'
-    success_url = '/item/list'  # URL to redirect after successful update
+    success_url = '/items/'  # URL to redirect after successful update
+
+
+class ItemDeleteView(LoginRequiredMixin, DeleteView):
+    model = Item
+    success_url = '/items/'  # URL to redirect after successful update
+    template_name = 'fridge_app/item_update.html'
 
 
 def item_update_view(request, pk):
