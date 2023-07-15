@@ -9,21 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="added user customization">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CS411_FM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS411_FM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8313acde-feac-464a-abd5-3066c69be622.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="650460f4-6f80-4575-b743-5e8f0b3a7aa6" name="New changelist" comment="working in progress for list of fridge name in item details">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/expired.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/item_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/templates/fridge_app/shopping_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fridge_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fridge_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -51,7 +38,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Django-Backend" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,29 +67,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Rebasing Django-Backend__Jul14__1730hr",
-    "last_opened_file_path": "/Users/kyawminthu/PycharmProjects/fridgemanagement_archived Jul15",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Django-Backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Django Server.FM_Python_Jul15">
+}</component>
+  <component name="RunManager">
     <configuration name="CS411_FM" type="Python.DjangoServer" factoryName="Django server">
       <module name="CS411_FM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,35 +114,6 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FM_Python_Jul15" type="Python.DjangoServer" factoryName="Django server">
-      <module name="CS411_FM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="CS411_FM.settings" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python3.11" />
-      <option name="SDK_NAME" value="Python 3.11 (fridgemanagement_archived Jul15)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Django Server.CS411_FM" />
-      <item itemvalue="Django Server.FM_Python_Jul15" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -181,9 +138,6 @@
       <workItem from="1689032482557" duration="5513000" />
       <workItem from="1689193626570" duration="6707000" />
       <workItem from="1689365347300" duration="2748000" />
-      <workItem from="1689389771926" duration="2654000" />
-      <workItem from="1689472333060" duration="292000" />
-      <workItem from="1689476949110" duration="2700000" />
     </task>
     <task id="LOCAL-00001" summary="New changelist">
       <created>1688685350051</created>
@@ -351,21 +305,7 @@
       <option name="project" value="LOCAL" />
       <updated>1689127360041</updated>
     </task>
-    <task id="LOCAL-00023" summary="update item is working.">
-      <created>1689381073715</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1689381073715</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added delete item in the update html.">
-      <created>1689391348875</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1689391348875</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,20 +375,7 @@
     <MESSAGE value="fixed screenshot error" />
     <MESSAGE value="Change list views to read only and clickable link forwarding to details for both Fridge and Items" />
     <MESSAGE value="working in progress for list of fridge name in item details" />
-    <MESSAGE value="update item is working." />
-    <MESSAGE value="added delete item in the update html." />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete item in the update html." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fridge_app/views.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="working in progress for list of fridge name in item details" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fridgemanagement$urls.coverage" NAME="urls Coverage Results" MODIFIED="1688786480009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fridge_app" />
