@@ -2,31 +2,36 @@
 
 {% block content %}
     <h1>Item Update</h1>
+    <form class="form" method="POST" action="{% url 'item_update' pk=item.pk %}">
+        {% csrf_token %}
 
-    <table class="table">
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Quantity</th>
-            <th>Category</th>
-            <th>Expiry Date</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><input type="text" name="id" value="{{ object.id }}" class="form-control form-control-sm"></td>
-            <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
-            <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
-            <td><input type="text" name="category" value="{{ object.category }}" class="form-control form-control-sm">
-            </td>
-            <td><input type="text" name="expiry_date"
-                       value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}"
-                       class="form-control"></td>
-        </tr>
-        </tbody>
-    </table>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Category</th>
+                <th>Fridge</th>
+                <th>Expiry Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm">
+                </td>
+                <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm">
+                </td>
+                <td><input type="text" name="category" value="{{ item.category }}"
+                           class="form-control form-control-sm"></td>
+                <td><input type="text" name="fridge" value="{{ item.fridge.name }}"
+                           class="form-control form-control-sm"></td>
+                <td><input type="text" name="expiry_date"
+                           value="{{ item.expiry_date |date:"Y-m-d" }}"
+                           class="form-control"></td>
+            </tr>
+            </tbody>
+        </table>
 
-    <button class="btn btn-primary" type="submit">Save</button>
-
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
 {% endblock content %}

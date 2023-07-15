@@ -24,6 +24,9 @@ class Item(models.Model):
     def is_expired(self):
         return self.expiry_date < datetime.now().date()
 
+    def fridge_name(self):
+        return self.fridge.name
+
     """
 
 

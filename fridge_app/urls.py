@@ -12,7 +12,7 @@ from . import views
 
 urlpatterns = [
     # path('', views.home, name='fridge-home'),
-    path('', ItemListView.as_view(), name='fridge-home'),
+    path('items/', ItemListView.as_view(), name='items-home'),
     path('item/<int:pk>/', ItemDetailView.as_view(), name='item-detail'),
     path('item/new/', ItemCreateView.as_view(), name='item_create'),
     path('fridge/', FridgeListView.as_view(), name='fridge-home'),
@@ -21,6 +21,7 @@ urlpatterns = [
     path('about/', views.about, name='fridge-about'),
     path('item/expired', views.expired, name='fridge-expired'),
     path('shopping', views.shopping, name='fridge-shopping'),
-    path('item/update/<int:pk>/', ItemUpdateView.as_view(), name='item_update'),
+    # path('item/<int:pk>/update/', ItemUpdateView.as_view(), name='item_update'),
+    path('item/<int:pk>/update/', views.item_update_view, name='item_update'),
 
 ]

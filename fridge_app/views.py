@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 from datetime import datetime
 from django import forms
 
@@ -44,28 +45,27 @@ def home(request):
 """
 
 
-class ItemListView(ListView):
+class ItemListView(LoginRequiredMixin, ListView):
     model = Item
     template_name = 'fridge_app/home.html'
     context_object_name = 'item_list'
 
 
-class ItemDetailView(DetailView):
+class ItemDetailView(LoginRequiredMixin, DetailView):
     model = Item
 
 
-class FridgeDetailView(DetailView):
+class FridgeDetailView(LoginRequiredMixin, DetailView):
     model = Fridge
 
 
-class FridgeCreateView(CreateView):
+class FridgeCreateView(LoginRequiredMixin, CreateView):
     model = Fridge
     fields = ['name', 'location']
 
 
-class ItemCreateView(CreateView):
+class ItemCreateView(LoginRequiredMixin, CreateView):
     model = Item
-    # template_name = 'fridge_app/item_form.html'
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
 
     def get_context_data(self, **kwargs):
@@ -74,26 +74,53 @@ class ItemCreateView(CreateView):
         return context
 
 
-class ItemForm(forms.ModelForm):
+class ItemForm(LoginRequiredMixin, forms.ModelForm):
     class Meta:
         model = Item
         fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
 
 
-class ItemUpdateView(UpdateView):
+class ItemUpdateView(LoginRequiredMixin, UpdateView):
     model = Item
-    form_class = ItemForm
+    fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+    # form_class = ItemForm
     template_name = 'fridge_app/item_update.html'
     success_url = '/item/list'  # URL to redirect after successful update
 
 
-class FridgeListView(ListView):
+def item_update_view(request, pk):
+    item = get_object_or_404(Item, pk=pk)
+
+    if request.method == 'POST':
+        # Retrieve the form data
+        name = request.POST['name']
+        qty = request.POST['qty']
+        category = request.POST['category']
+        fridge = request.POST['fridge']
+        expiry_date = request.POST['expiry_date']
+
+        # Update the item object
+        item.name = name
+        item.qty = qty
+        item.category = category
+        # item.fridge = fridge.pk
+        item.expiry_date = expiry_date
+        item.save()
+
+        # Redirect to the item detail view or any other desired page
+        return redirect('items-home')
+
+    context = {'item': item}
+    return render(request, 'fridge_app/item_update.html', context)
+
+
+class FridgeListView(LoginRequiredMixin, ListView):
     model = Fridge
     template_name = 'fridge_app/fridges.html'
     context_object_name = 'fridge_list'
 
 
-class FridgeDetailView(DetailView):
+class FridgeDetailView(LoginRequiredMixin, DetailView):
     model = Fridge
 
 
