@@ -24,9 +24,14 @@ SECRET_KEY = 'django-insecure-!nfa8*7=l33c14lwzth5f04j+h0tl+lm)q1z0-7i9r+y153(=s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fridgemanagement.com','www.fridgemanagement.com','localhost']
+ALLOWED_HOSTS = ['fridgemanagement.com', 'www.fridgemanagement.com', 'localhost']
 
 # Application definition
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+]
 
 INSTALLED_APPS = [
     'fridge_app.apps.FridgeAppConfig',
