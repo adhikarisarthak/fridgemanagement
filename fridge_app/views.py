@@ -1,47 +1,15 @@
 from django.shortcuts import render
 from datetime import datetime
+from django import forms
 
 from django.views.generic import (
     ListView,
     DetailView,
-    CreateView
+    CreateView,
+    UpdateView,
+    DeleteView,
 )
 from .models import Item, Fridge
-
-item_list = [
-    {
-        "id": 1,
-        "name": "Apple",
-        "category": "Fruits",
-        "qty": 10,
-        "fridge_id": 1,
-        "expiry_date": "2023-03-09T22:00:00"
-    },
-    {
-        "id": 2,
-        "name": "Beef",
-        "category": "Meat",
-        "qty": 1,
-        "fridge_id": 1,
-        "expiry_date": "2023-03-10T22:00:00"
-    },
-    {
-        "id": 3,
-        "name": "Eggs",
-        "category": "Diary",
-        "qty": 12,
-        "fridge_id": 1,
-        "expiry_date": "2023-03-09T22:00:00"
-    },
-    {
-        "id": 4,
-        "name": "Maple Syrup",
-        "category": "Desserts",
-        "qty": 2,
-        "fridge_id": 2,
-        "expiry_date": "2023-03-19T22:00:00"
-    },
-]
 
 members = [
     {
@@ -86,6 +54,15 @@ class ItemDetailView(DetailView):
     model = Item
 
 
+class FridgeDetailView(DetailView):
+    model = Fridge
+
+
+class FridgeCreateView(CreateView):
+    model = Fridge
+    fields = ['name', 'location']
+
+
 class ItemCreateView(CreateView):
     model = Item
     # template_name = 'fridge_app/item_form.html'
@@ -95,6 +72,19 @@ class ItemCreateView(CreateView):
         context = super().get_context_data(**kwargs)
         context['fridge_list'] = Fridge.objects.all()
         return context
+
+
+class ItemForm(forms.ModelForm):
+    class Meta:
+        model = Item
+        fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+
+
+class ItemUpdateView(UpdateView):
+    model = Item
+    form_class = ItemForm
+    template_name = 'fridge_app/item_update.html'
+    success_url = '/item/list'  # URL to redirect after successful update
 
 
 class FridgeListView(ListView):

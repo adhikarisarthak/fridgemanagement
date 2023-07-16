@@ -7,7 +7,6 @@
     <table class="table">
         <thead>
         <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Location</th>
         </tr>
@@ -15,14 +14,12 @@
         <tbody>
         {% for fridge in fridge_list %}
             <tr>
-                <td>{{ fridge.id }}</td>
-                <td><input type="text" name="name" value="{{ fridge.name }}" class="form-control form-control-sm"></td>
-                <td><input type="text" name="location" value="{{ fridge.location }}"
-                           class="form-control form-control-sm"></td>
+                <td><a href="{% url 'fridge-detail' fridge.id %}" readonly>{{ fridge.name }}</a></td>
+                <td><a href="{% url 'fridge-detail' fridge.id %}" readonly>{{ fridge.location }}</a></td>
+                </td>
+
             </tr>
         {% endfor %}
         </tbody>
     </table>
-    <button class="btn btn-primary" type="submit">Save</button>
-
 {% endblock content %}
