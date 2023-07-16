@@ -19,7 +19,7 @@
                 <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.name }}</a></td>
                 <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.qty }}</a></td>
                 <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.category }}</a></td>
-                <td><a href="{% url 'item_update' item.id %}" readonly>{{ fridge.name }}</a>
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.fridge.name }}</a>
                 </td>
                 <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.expiry_date |date:"Y-m-d" }}</a>
                 </td>

@@ -23,7 +23,7 @@ urlpatterns = [
     path('about/', views.about, name='fridge-about'),
     path('item/expired', views.expired, name='fridge-expired'),
     path('shopping', views.shopping, name='fridge-shopping'),
-    # path('item/<int:pk>/update/', ItemUpdateView.as_view(), name='item_update'),
-    path('item/<int:pk>/update/', views.item_update_view, name='item_update'),
+    path('item/<int:pk>/update/', ItemUpdateView.as_view(), name='item_update'),
+    # path('item/<int:pk>/update/', views.item_update_view, name='item_update'),
     path('item/<int:pk>/delete/', ItemDeleteView.as_view(), name='item_delete'),
 ]
