@@ -28,11 +28,6 @@ ALLOWED_HOSTS = ['fridgemanagement.com', 'www.fridgemanagement.com', 'localhost'
 
 # Application definition
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-]
-
 INSTALLED_APPS = [
     'fridge_app.apps.FridgeAppConfig',
     'users.apps.UsersConfig',
