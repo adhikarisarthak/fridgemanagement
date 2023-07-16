@@ -104,13 +104,15 @@ def item_update_view(request, pk):
         qty = request.POST['qty']
         category = request.POST['category']
         fridge = request.POST['fridge']
+        # fridge = Fridge.objects.filter(pk=int(request.POST['fridge']))
         expiry_date = request.POST['expiry_date']
 
         # Update the item object
         item.name = name
         item.qty = qty
         item.category = category
-        # item.fridge = fridge.pk
+
+        item.fridge = fridge
         item.expiry_date = expiry_date
         item.save()
 
