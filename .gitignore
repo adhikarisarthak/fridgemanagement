@@ -1,1 +1,7 @@
 env
+.idea
+db.sqlite3
+lib
+bin
+.git
+.Python
