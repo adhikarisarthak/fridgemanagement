@@ -6,7 +6,6 @@
     <table class="table">
         <thead>
         <tr>
-            {#            <th>ID</th>#}
             <th>Name</th>
             <th>Quantity</th>
             <th>Category</th>
@@ -17,21 +16,11 @@
         <tbody>
         {% for item in item_list %}
             <tr>
-                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.name }}</a></td>
-                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.qty }}</a></td>
-                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.category }}</a></td>
-                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ fridge.name }}</a>
-                </td>
-                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.expiry_date |date:"Y-m-d" }}</a>
-                </td>
-
-                {#                <td><a href="{% url 'item-detail' item.id %}" readonly>{{ item.id }}</a></td>#}
-                {#                <td><input type="text" name="name" value="{{ item.name }}" class="form-control form-control-sm"></td>#}
-                {#                <td><input type="text" name="qty" value="{{ item.qty }}" class="form-control form-control-sm"></td>#}
-                {#                <td><input type="text" name="category" value="{{ item.category }}" class="form-control form-control-sm">#}
-                {#                </td>#}
-                {#                <td><input type="date" name="expiry_date" value="{{ item.expiry_date |date:"Y-m-d" }}"#}
-                {#                           class="form-control"></td>#}
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.name }}</a></td>
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.qty }}</a></td>
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.category }}</a></td>
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.fridge.name }}</a></td>
+                <td><a href="{% url 'item_update' item.id %}" readonly>{{ item.expiry_date |date:"Y-m-d" }}</a></td>
             </tr>
         {% endfor %}
         </tbody>
