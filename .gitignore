@@ -4,3 +4,4 @@ lib
 bin
 .git
 .Python
+db.sqlite3
