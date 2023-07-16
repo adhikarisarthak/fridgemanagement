@@ -22,7 +22,8 @@
             <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
             <td><input type="text" name="category" value="{{ object.category }}" class="form-control form-control-sm">
             </td>
-            <td><input type="text" name="category" value="{{ object.fridge_id }}" class="form-control form-control-sm">
+            <td><input type="text" name="category" value="{{ object.fridge.name }}"
+                       class="form-control form-control-sm">
             </td>
             <td><input type="text" name="expiry_date"
                        value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}"
