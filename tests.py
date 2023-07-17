@@ -1,12 +1,12 @@
-from django.test import SimpleTestCase
-from django.urls import reverse, resolve
-from fridge_app.views import about, shopping, expired, fridges
-from django.test import TestCase
-from django.urls import reverse
 from datetime import datetime, timedelta
 from django.contrib.auth.models import User
+from django.test import SimpleTestCase, TestCase, Client
+from django.urls import reverse, resolve
 from fridge_app.models import Item, Fridge
- 
+from fridge_app.views import about, shopping, expired, fridges
+import users.views as user_views
+
+
 class TestUrls(SimpleTestCase):
 
     def test_about_url_resolves(self):
@@ -16,18 +16,26 @@ class TestUrls(SimpleTestCase):
     def test_shopping_url_resolves(self):
         url = reverse('fridge-shopping')
         self.assertEqual(resolve(url).func, shopping)
-    
+
     def test_expired_url_resolves(self):
         url = reverse('fridge-expired')
         self.assertEqual(resolve(url).func, expired)
-    
-    def test_shopping_url_resolves(self):
+
+    def test_fridges_url_resolves(self):
         url = reverse('fridge-detail')
         self.assertEqual(resolve(url).func, fridges)
-    
-    def test_expired_url_resolves(self):
+
+    def test_fridge_create_url_resolves(self):
         url = reverse('fridge-create')
-        self.assertEqual(resolve(url).func, fridge-create)
+        self.assertEqual(resolve(url).func, fridge - create)
+
+    def test_register_url_resolves(self):
+        url = reverse('register')
+        self.assertEquals(resolve(url).func, user_views.register)
+
+    def test_profile_url_resolves(self):
+        url = reverse('profile')
+        self.assertEquals(resolve(url).func, user_views.profile)
 
 
 class ItemModelTest(TestCase):
