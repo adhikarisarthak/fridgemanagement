@@ -65,7 +65,7 @@ class FridgeCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-
+        self.object = form.save()
         # Redirect to a specific URL after successful form submission
         return redirect('fridge-home')
 
