@@ -1,0 +1,23 @@
+{% extends "fridge_app/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>Add Fridge</h1>
+    <form class="form" method="POST" action="{% url 'fridge-create' %}">
+        {% csrf_token %}
+
+        <!-- Fields for the form -->
+        <div class="form-group">
+            <label for="id_name">Name:</label>
+            <input class="form-control" type="text" id="id_name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="id_location">Location:</label>
+            <input class="form-control" type="text" id="id_location" name="location" required>
+        </div>
+
+        <!-- Submit button -->
+        <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+
+{% endblock content %}

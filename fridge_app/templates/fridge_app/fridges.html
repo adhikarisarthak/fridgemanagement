@@ -14,8 +14,8 @@
         <tbody>
         {% for fridge in fridge_list %}
             <tr>
-                <td><a href="{% url 'fridge-detail' fridge.id %}" readonly>{{ fridge.name }}</a></td>
-                <td><a href="{% url 'fridge-detail' fridge.id %}" readonly>{{ fridge.location }}</a></td>
+                <td><a href="{% url 'fridge_update' fridge.id %}" readonly>{{ fridge.name }}</a></td>
+                <td><a href="{% url 'fridge_update' fridge.id %}" readonly>{{ fridge.location }}</a></td>
                 </td>
 
             </tr>

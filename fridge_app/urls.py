@@ -8,6 +8,8 @@ from .views import (
     FridgeListView,
     FridgeDetailView,
     FridgeCreateView,
+    FridgeUpdateView,
+    FridgeDeleteView,
 
 )
 from . import views
@@ -18,8 +20,10 @@ urlpatterns = [
     path('item/<int:pk>/', ItemDetailView.as_view(), name='item-detail'),
     path('item/new/', ItemCreateView.as_view(), name='item_create'),
     path('fridge/', FridgeListView.as_view(), name='fridge-home'),
-    path('fridge/<int:pk>/', FridgeDetailView.as_view(), name='fridge-detail'),
+    path('fridge/<int:pk>/', FridgeDetailView.as_view(), name='fridge_detail'),
+    path('fridge/<int:pk>/update', FridgeUpdateView.as_view(), name='fridge_update'),
     path('fridge/new/', FridgeCreateView.as_view(), name='fridge-create'),
+    path('fridge/<int:pk>/delete/', FridgeDeleteView.as_view(), name='fridge_delete'),
     path('about/', views.about, name='fridge-about'),
     path('item/expired', views.expired, name='fridge-expired'),
     path('shopping', views.shopping, name='fridge-shopping'),

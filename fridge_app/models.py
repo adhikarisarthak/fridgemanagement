@@ -30,6 +30,9 @@ class Item(models.Model):
     def fridge_name(self):
         return self.fridge.name
 
+    def __str__(self):
+        return self.name
+
     """
 
 

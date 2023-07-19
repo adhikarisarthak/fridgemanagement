@@ -63,6 +63,32 @@ class FridgeCreateView(LoginRequiredMixin, CreateView):
     model = Fridge
     fields = ['name', 'location']
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+
+        # Redirect to a specific URL after successful form submission
+        return redirect('fridge-home')
+
+
+class FridgeUpdateView(LoginRequiredMixin, UpdateView):
+    model = Fridge
+    fields = ['name', 'location']
+    # form_class = ItemForm
+    template_name = 'fridge_app/fridge_update.html'
+    success_url = '/fridge/'  # URL to redirect after successful update
+
+
+class FridgeDeleteView(LoginRequiredMixin, DeleteView):
+    model = Fridge
+    success_url = '/fridge/'  # URL to redirect after successful update
+    template_name = 'fridge_app/fridge_update.html'
+
+
+# class FridgeForm(LoginRequiredMixin, forms.ModelForm):
+#     class Meta:
+#         model = Fridge
+#         fields = ['name', 'location']
+
 
 class ItemCreateView(LoginRequiredMixin, CreateView):
     model = Item
@@ -127,14 +153,6 @@ class FridgeListView(LoginRequiredMixin, ListView):
     model = Fridge
     template_name = 'fridge_app/fridges.html'
     context_object_name = 'fridge_list'
-
-
-class FridgeDetailView(LoginRequiredMixin, DetailView):
-    model = Fridge
-
-
-class FridgeCreateView(CreateView):
-    model = Fridge
 
 
 def sort_category(request):
