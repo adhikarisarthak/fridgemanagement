@@ -50,6 +50,12 @@ class ItemListView(LoginRequiredMixin, ListView):
     template_name = 'fridge_app/home.html'
     context_object_name = 'item_list'
 
+    def get_queryset(self):
+        user = self.request.user
+        user_fridges = Fridge.objects.filter(user=user)
+        queryset = Item.objects.filter(fridge__in=user_fridges)
+        return queryset
+
 
 class ItemDetailView(LoginRequiredMixin, DetailView):
     model = Item
@@ -154,6 +160,11 @@ class FridgeListView(LoginRequiredMixin, ListView):
     template_name = 'fridge_app/fridges.html'
     context_object_name = 'fridge_list'
 
+    def get_queryset(self):
+        user = self.request.user
+        queryset = Fridge.objects.filter(user=user)
+        return queryset
+
 
 def sort_category(request):
     context = {
@@ -165,19 +176,21 @@ def sort_category(request):
 
 
 def expired(request):
+    user = request.user
     context = {
-        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
-        'fridge_list': Fridge.objects.all(),
+        'item_list': Item.objects.filter(fridge__user=user, expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.filter(user=user),
         'title': 'Expired',
     }
     return render(request, 'fridge_app/expired.html', context)
 
 
 def shopping(request):
+    user = request.user
     context = {
-        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
-        'fridge_list': Fridge.objects.all(),
-        'title': 'Shopping',
+        'item_list': Item.objects.filter(fridge__user=user, expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.filter(user=user),
+        'title': 'Expired',
     }
     return render(request, 'fridge_app/shopping_list.html', context)
 
