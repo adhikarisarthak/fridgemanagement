@@ -3,6 +3,14 @@
 {% block content %}
     <h1>Item List</h1>
 
+    <form class="form-inline" method="GET" action="{% url 'items-home' %}">
+        <div class="form-group mr-2">
+            <input class="form-control" type="text" name="query" placeholder="Search...">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+
+
     <table class="table">
         <thead>
         <tr>

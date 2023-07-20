@@ -54,6 +54,11 @@ class ItemListView(LoginRequiredMixin, ListView):
         user = self.request.user
         user_fridges = Fridge.objects.filter(user=user)
         queryset = Item.objects.filter(fridge__in=user_fridges)
+
+        # Get the search query from the request GET parameters
+        query = self.request.GET.get('query')
+        if query:
+            queryset = queryset.filter(name__icontains=query)
         return queryset
 
 
@@ -167,8 +172,9 @@ class FridgeListView(LoginRequiredMixin, ListView):
 
 
 def sort_category(request):
+    item_list = Item.objects.order_by('category')
     context = {
-        'item_list': Item.objects.all(),
+        'item_list': item_list,
         'fridge_list': Fridge.objects.all(),
         'title': 'Category',
     }
