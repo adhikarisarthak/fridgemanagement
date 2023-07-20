@@ -172,10 +172,11 @@ class FridgeListView(LoginRequiredMixin, ListView):
 
 
 def sort_category(request):
-    item_list = Item.objects.order_by('category')
+    user = request.user
+    item_list = Item.objects.filter(fridge__user=user).order_by('category')
     context = {
         'item_list': item_list,
-        'fridge_list': Fridge.objects.all(),
+        'fridge_list': Fridge.objects.filter(user=user),
         'title': 'Category',
     }
     return render(request, 'fridge_app/sortCategory.html', context)
