@@ -28,9 +28,14 @@ Expired items are automatically added to your shopping list
 
 ![screen4.png](screen4.png)
 
+Remove an item from the fridge or update the number of items for a given item in the fridge 
+
+![screen5.png](screen5.png)
+
+
 ## Upcoming Features
 
-Individual user accounts with multiple fridges, remove items option from individual fridge, and more features are
+Individual user accounts with multiple fridges, adding new fridges, and more features are
 forthcoming.
 
 ## Github URL

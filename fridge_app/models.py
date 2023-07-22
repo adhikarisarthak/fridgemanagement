@@ -13,6 +13,10 @@ class Fridge(models.Model):
     def __str__(self):
         return self.name
 
+    @staticmethod
+    def get_user_fridges(user):
+        return Item.objects.filter(user=user)
+
 
 class Item(models.Model):
     name = models.CharField(max_length=200)
@@ -29,6 +33,9 @@ class Item(models.Model):
 
     def fridge_name(self):
         return self.fridge.name
+
+    def __str__(self):
+        return self.name
 
     """
 

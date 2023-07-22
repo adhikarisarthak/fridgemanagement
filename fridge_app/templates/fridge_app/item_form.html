@@ -25,17 +25,20 @@
             <label for="id_fridge">Fridge:</label>
             <select class="form-control" id="id_fridge" name="fridge" required>
                 {% for fridge in fridge_list %}
-                    <option value='{{ fridge.id }}'> {{ fridge.name }}</option>
+                    {% if fridge.user == request.user %}
+                        <option value="{{ fridge.id }}">{{ fridge.name }}</option>
+                    {% endif %}
                 {% endfor %}
             </select>
         </div>
+
 
         <div class="form-group">
             <label for="id_expiry_date">Expiry Date:</label>
             <input class="form-control" type="date" id="id_expiry_date" name="expiry_date" required>
         </div>
 
-        <!-- Submit button -->
+        <!-- Submit button  -->
         <button class="btn btn-primary" type="submit">Save</button>
     </form>
 

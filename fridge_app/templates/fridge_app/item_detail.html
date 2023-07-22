@@ -16,19 +16,19 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>{{ object.id }}</td>
-            <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
-            <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
-            <td><input type="text" name="category" value="{{ object.category }}" class="form-control form-control-sm">
-            </td>
-            <td><input type="text" name="category" value="{{ object.fridge.name }}"
-                       class="form-control form-control-sm">
-            </td>
-            <td><input type="text" name="expiry_date"
-                       value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}"
-                       class="form-control"></td>
-        </tr>
+            <tr>
+                <td>{{ object.id }}</td>
+                <td><input type="text" name="name" value="{{ object.name }}" class="form-control form-control-sm"></td>
+                <td><input type="text" name="qty" value="{{ object.qty }}" class="form-control form-control-sm"></td>
+                <td><input type="text" name="category" value="{{ object.category }}" class="form-control form-control-sm">
+                </td>
+                <td><input type="text" name="category" value="{{ object.fridge.name }}"
+                           class="form-control form-control-sm">
+                </td>
+                <td><input type="text" name="expiry_date"
+                           value="{% if object.expiry_date %}{{ object.expiry_date }}{% else %}No expiry date{% endif %}"
+                           class="form-control"></td>
+            </tr>
         </tbody>
     </table>
 

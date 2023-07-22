@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-    <h1>Item Update</h1>
+    <h1>Fridge Update</h1>
     <div class="d-flex flex-column">
         <form method="post">
             {% csrf_token %}
@@ -10,7 +10,7 @@
 
             <input class="btn btn-success" type="submit" value="Update">
         </form>
-        <form class="form mt-2" method="POST" action="{% url 'item_delete' pk=item.pk %}">
+        <form class="form mt-2" method="POST" action="{% url 'fridge_delete' pk=fridge.pk %}">
             {% csrf_token %}
             <button class="btn btn-danger" type="submit">Delete</button>
         </form>

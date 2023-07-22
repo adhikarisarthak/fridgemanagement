@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from datetime import datetime
 from django import forms
 
+
 from django.views.generic import (
     ListView,
     DetailView,
@@ -50,6 +51,17 @@ class ItemListView(LoginRequiredMixin, ListView):
     template_name = 'fridge_app/home.html'
     context_object_name = 'item_list'
 
+    def get_queryset(self):
+        user = self.request.user
+        user_fridges = Fridge.objects.filter(user=user)
+        queryset = Item.objects.filter(fridge__in=user_fridges)
+
+        # Get the search query from the request GET parameters
+        query = self.request.GET.get('query')
+        if query:
+            queryset = queryset.filter(name__icontains=query)
+        return queryset
+
 
 class ItemDetailView(LoginRequiredMixin, DetailView):
     model = Item
@@ -62,6 +74,32 @@ class FridgeDetailView(LoginRequiredMixin, DetailView):
 class FridgeCreateView(LoginRequiredMixin, CreateView):
     model = Fridge
     fields = ['name', 'location']
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        self.object = form.save()
+        # Redirect to a specific URL after successful form submission
+        return redirect('fridge-home')
+
+
+class FridgeUpdateView(LoginRequiredMixin, UpdateView):
+    model = Fridge
+    fields = ['name', 'location']
+    # form_class = ItemForm
+    template_name = 'fridge_app/fridge_update.html'
+    success_url = '/fridge/'  # URL to redirect after successful update
+
+
+class FridgeDeleteView(LoginRequiredMixin, DeleteView):
+    model = Fridge
+    success_url = '/fridge/'  # URL to redirect after successful update
+    template_name = 'fridge_app/fridge_update.html'
+
+
+# class FridgeForm(LoginRequiredMixin, forms.ModelForm):
+#     class Meta:
+#         model = Fridge
+#         fields = ['name', 'location']
 
 
 class ItemCreateView(LoginRequiredMixin, CreateView):
@@ -128,38 +166,39 @@ class FridgeListView(LoginRequiredMixin, ListView):
     template_name = 'fridge_app/fridges.html'
     context_object_name = 'fridge_list'
 
-
-class FridgeDetailView(LoginRequiredMixin, DetailView):
-    model = Fridge
-
-
-class FridgeCreateView(CreateView):
-    model = Fridge
+    def get_queryset(self):
+        user = self.request.user
+        queryset = Fridge.objects.filter(user=user)
+        return queryset
 
 
 def sort_category(request):
+    user = request.user
+    item_list = Item.objects.filter(fridge__user=user).order_by('category')
     context = {
-        'item_list': Item.objects.all(),
-        'fridge_list': Fridge.objects.all(),
+        'item_list': item_list,
+        'fridge_list': Fridge.objects.filter(user=user),
         'title': 'Category',
     }
     return render(request, 'fridge_app/sortCategory.html', context)
 
 
 def expired(request):
+    user = request.user
     context = {
-        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
-        'fridge_list': Fridge.objects.all(),
+        'item_list': Item.objects.filter(fridge__user=user, expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.filter(user=user),
         'title': 'Expired',
     }
     return render(request, 'fridge_app/expired.html', context)
 
 
 def shopping(request):
+    user = request.user
     context = {
-        'item_list': Item.objects.filter(expiry_date__lt=datetime.now()),
-        'fridge_list': Fridge.objects.all(),
-        'title': 'Shopping',
+        'item_list': Item.objects.filter(fridge__user=user, expiry_date__lt=datetime.now()),
+        'fridge_list': Fridge.objects.filter(user=user),
+        'title': 'Expired',
     }
     return render(request, 'fridge_app/shopping_list.html', context)
 
