@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from datetime import datetime
 from django import forms
 
+
 from django.views.generic import (
     ListView,
     DetailView,
