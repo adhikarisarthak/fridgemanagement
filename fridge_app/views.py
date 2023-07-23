@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from datetime import datetime
 from django import forms
+from .forms import ItemForm, FridgeForm
+from .models import Item
 
 
 from django.views.generic import (
@@ -33,17 +35,6 @@ members = [
 ]
 
 # Create your views here.
-"""
-def home(request):
-    context = {
-        'item_list': Item.objects.all(),
-        'fridge_list': Fridge.objects.all(),
-        'title': 'Home',
-    }
-    for i in Item.objects.all():
-        print(i.expiry_date)
-    return render(request, 'fridge_app/home.html', context)
-"""
 
 
 class ItemListView(LoginRequiredMixin, ListView):
@@ -96,12 +87,6 @@ class FridgeDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'fridge_app/fridge_update.html'
 
 
-# class FridgeForm(LoginRequiredMixin, forms.ModelForm):
-#     class Meta:
-#         model = Fridge
-#         fields = ['name', 'location']
-
-
 class ItemCreateView(LoginRequiredMixin, CreateView):
     model = Item
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
@@ -113,24 +98,33 @@ class ItemCreateView(LoginRequiredMixin, CreateView):
         return context
 
 
-class ItemForm(LoginRequiredMixin, forms.ModelForm):
-    class Meta:
-        model = Item
-        fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
-
-
 class ItemUpdateView(LoginRequiredMixin, UpdateView):
     model = Item
-    fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
-    # form_class = ItemForm
+    # fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+    form_class = ItemForm
     template_name = 'fridge_app/item_update.html'
     success_url = '/items/'  # URL to redirect after successful update
+
+    def get_form_kwargs(self):
+        kwargs = super(ItemUpdateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
 
 
 class ItemDeleteView(LoginRequiredMixin, DeleteView):
     model = Item
     success_url = '/items/'  # URL to redirect after successful update
     template_name = 'fridge_app/item_update.html'
+
+
+def item_delete_view(request, pk):
+    item = get_object_or_404(Item, pk=pk)
+
+    if request.method == 'POST':
+        item.delete()
+        return redirect('items-home')  # Redirect to the list view of items after deletion
+
+    return render(request, 'fridge_app/home.html')
 
 
 def item_update_view(request, pk):

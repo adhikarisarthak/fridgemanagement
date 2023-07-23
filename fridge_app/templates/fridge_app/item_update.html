@@ -6,7 +6,7 @@
     <div class="d-flex flex-column">
         <form method="post">
             {% csrf_token %}
-            {{ form| crispy }}
+            {{ form | crispy }}
 
             <input class="btn btn-success" type="submit" value="Update">
         </form>
