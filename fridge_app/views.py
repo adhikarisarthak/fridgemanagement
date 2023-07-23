@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from datetime import datetime
 from django import forms
+from .forms import ItemForm, FridgeForm
+from .models import Item
 
 
 from django.views.generic import (
@@ -113,24 +115,39 @@ class ItemCreateView(LoginRequiredMixin, CreateView):
         return context
 
 
-class ItemForm(LoginRequiredMixin, forms.ModelForm):
-    class Meta:
-        model = Item
-        fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+# class ItemForm(LoginRequiredMixin, forms.ModelForm):
+#     class Meta:
+#         model = Item
+#         fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
 
 
 class ItemUpdateView(LoginRequiredMixin, UpdateView):
     model = Item
-    fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
-    # form_class = ItemForm
+    # fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
+    form_class = ItemForm
     template_name = 'fridge_app/item_update.html'
     success_url = '/items/'  # URL to redirect after successful update
+
+    def get_form_kwargs(self):
+        kwargs = super(ItemUpdateView, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
 
 
 class ItemDeleteView(LoginRequiredMixin, DeleteView):
     model = Item
     success_url = '/items/'  # URL to redirect after successful update
     template_name = 'fridge_app/item_update.html'
+
+
+def item_delete_view(request, pk):
+    item = get_object_or_404(Item, pk=pk)
+
+    if request.method == 'POST':
+        item.delete()
+        return redirect('items-home')  # Redirect to the list view of items after deletion
+
+    return render(request, 'fridge_app/home.html')
 
 
 def item_update_view(request, pk):
@@ -159,6 +176,21 @@ def item_update_view(request, pk):
 
     context = {'item': item}
     return render(request, 'fridge_app/item_update.html', context)
+
+
+# def item_update_view(request, pk):
+#     item = Item.objects.get(pk=pk)
+#
+#     # Make sure the request.user is available in the form
+#     if request.method == 'POST':
+#         item_form = ItemForm(request.user, request.POST, instance=item)
+#         if item_form.is_valid():
+#             item_form.save()
+#             return redirect('item-detail', pk=item.pk)
+#     else:
+#         item_form = ItemForm(request.user, instance=item)
+#
+#     return render(request, 'fridge_app/item_update.html', {'item_form': item_form})
 
 
 class FridgeListView(LoginRequiredMixin, ListView):
