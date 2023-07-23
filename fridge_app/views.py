@@ -35,17 +35,6 @@ members = [
 ]
 
 # Create your views here.
-"""
-def home(request):
-    context = {
-        'item_list': Item.objects.all(),
-        'fridge_list': Fridge.objects.all(),
-        'title': 'Home',
-    }
-    for i in Item.objects.all():
-        print(i.expiry_date)
-    return render(request, 'fridge_app/home.html', context)
-"""
 
 
 class ItemListView(LoginRequiredMixin, ListView):
@@ -98,12 +87,6 @@ class FridgeDeleteView(LoginRequiredMixin, DeleteView):
     template_name = 'fridge_app/fridge_update.html'
 
 
-# class FridgeForm(LoginRequiredMixin, forms.ModelForm):
-#     class Meta:
-#         model = Fridge
-#         fields = ['name', 'location']
-
-
 class ItemCreateView(LoginRequiredMixin, CreateView):
     model = Item
     fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
@@ -113,12 +96,6 @@ class ItemCreateView(LoginRequiredMixin, CreateView):
         context = super().get_context_data(**kwargs)
         context['fridge_list'] = Fridge.objects.all()
         return context
-
-
-# class ItemForm(LoginRequiredMixin, forms.ModelForm):
-#     class Meta:
-#         model = Item
-#         fields = ['name', 'category', 'qty', 'fridge', 'expiry_date']
 
 
 class ItemUpdateView(LoginRequiredMixin, UpdateView):
@@ -176,21 +153,6 @@ def item_update_view(request, pk):
 
     context = {'item': item}
     return render(request, 'fridge_app/item_update.html', context)
-
-
-# def item_update_view(request, pk):
-#     item = Item.objects.get(pk=pk)
-#
-#     # Make sure the request.user is available in the form
-#     if request.method == 'POST':
-#         item_form = ItemForm(request.user, request.POST, instance=item)
-#         if item_form.is_valid():
-#             item_form.save()
-#             return redirect('item-detail', pk=item.pk)
-#     else:
-#         item_form = ItemForm(request.user, instance=item)
-#
-#     return render(request, 'fridge_app/item_update.html', {'item_form': item_form})
 
 
 class FridgeListView(LoginRequiredMixin, ListView):
