@@ -45,12 +45,16 @@ class ItemListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         user = self.request.user
         user_fridges = Fridge.objects.filter(user=user)
-        queryset = Item.objects.filter(fridge__in=user_fridges)
+
+        # Use select_related() to fetch related fridge data in a single query
+        queryset = Item.objects.select_related('fridge').filter(fridge__in=user_fridges)
 
         # Get the search query from the request GET parameters
         query = self.request.GET.get('query')
         if query:
-            queryset = queryset.filter(name__icontains=query)
+            # Use prefetch_related() to fetch related fridge data in a single query
+            queryset = queryset.filter(name__icontains=query).prefetch_related('fridge')
+
         return queryset
 
 
@@ -162,7 +166,7 @@ class FridgeListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         user = self.request.user
-        queryset = Fridge.objects.filter(user=user)
+        queryset = Fridge.objects.select_related('user').filter(user=user)
         return queryset
 
 

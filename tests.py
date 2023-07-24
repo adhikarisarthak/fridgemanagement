@@ -28,7 +28,7 @@ class TestUrls(SimpleTestCase):
 
     def test_fridge_create_url_resolves(self):
         url = reverse('fridge-create')
-        self.assertEqual(resolve(url).func, fridge-create)
+        self.assertEqual(resolve(url).func.view_class, fridge_views.FridgeCreateView)
 
     def test_register_url_resolves(self):
         url = reverse('register')
